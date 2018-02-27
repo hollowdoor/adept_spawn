@@ -1,0 +1,38 @@
+{
+  "name": "adept-spawn",
+  "version": "1.0.0",
+  "description": "Spawn programs well, and good",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run build && npm run gentoc",
+    "test": "mocha test/run.js",
+    "build": "rollup -c",
+    "gentoc": "doctoc --title '**Contents**' README.md"
+  },
+  "keywords": [
+    "spawn",
+    "exec"
+  ],
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "highland": "^2.11.1",
+    "spawn-args": "^0.2.0"
+  },
+  "devDependencies": {
+    "doctoc": "^1.3.1",
+    "mocha": "^5.0.1",
+    "rollup": "^0.56.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/adept_spawn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/adept_spawn/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/adept_spawn#readme"
+}
